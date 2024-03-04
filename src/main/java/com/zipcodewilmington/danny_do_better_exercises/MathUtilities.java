@@ -5,13 +5,25 @@ package com.zipcodewilmington.danny_do_better_exercises;
  */
 public class MathUtilities {
 
+
     /**
      * @param baseValue  starting value
      * @param difference value to add to starting value
      * @return sum of `baseValue` and `difference`
      */
-    public Integer add(int baseValue, int difference) {
-        return null;
+
+    public int add(int baseValue, int difference) {
+        return baseValue + difference;
+    }
+
+
+    /**
+     * @param baseValue  starting value
+     * @param difference value to add to starting value
+     * @return sum of `baseValue` and `difference`
+     */
+    public long add(long baseValue, long difference) {
+        mathUtils.add(baseValue, addedValue);
     }
 
     /**
@@ -19,8 +31,8 @@ public class MathUtilities {
      * @param difference value to add to starting value
      * @return sum of `baseValue` and `difference`
      */
-    public Long add(long baseValue, long difference) {
-        return null;
+    public short add(short baseValue, short difference) {
+        return (short) (baseValue + difference);
     }
 
     /**
@@ -28,17 +40,8 @@ public class MathUtilities {
      * @param difference value to add to starting value
      * @return sum of `baseValue` and `difference`
      */
-    public Short add(short baseValue, short difference) {
-        return null;
-    }
-
-    /**
-     * @param baseValue  starting value
-     * @param difference value to add to starting value
-     * @return sum of `baseValue` and `difference`
-     */
-    public Byte add(byte baseValue, byte difference) {
-        return null;
+    public byte add(byte baseValue, byte difference) {
+        return (byte) (baseValue + difference);
     }
 
     /**
@@ -47,7 +50,8 @@ public class MathUtilities {
      * @return sum of `baseValue` and `difference`
      */
     public Float add(float baseValue, float difference) {
-        return null;
+        Float addFloatSum = (baseValue + difference);
+        return addFloatSum;
     }
 
     /**
@@ -56,7 +60,8 @@ public class MathUtilities {
      * @return sum of `baseValue` and `difference`
      */
     public Double add(double baseValue, double difference) {
-        return null;
+        Double addDoubleSum = (baseValue + difference);
+        return addDoubleSum;
     }
 
     /**
