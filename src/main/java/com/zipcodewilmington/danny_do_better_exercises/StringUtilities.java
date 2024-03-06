@@ -93,8 +93,9 @@ public class StringUtilities {
     public static String getFirstWord(String spaceDelimitedString) {
         String result = "";
         String[] words = spaceDelimitedString.split(" ");
-        int sizeOfWordArray = words.length;
-        result = words[sizeOfWordArray - 1];
+        if (words.length >= 1) {
+            result = words[0];
+        }
         return result;
     }
 
@@ -105,8 +106,9 @@ public class StringUtilities {
     public static String getSecondWord(String spaceDelimitedString) {
         String result = "";
         String[] words = spaceDelimitedString.split(" ");
-        int sizeOfWordArray = words.length;
-        result = words[sizeOfWordArray - 1];
+        if (words.length >=2) {
+            result = words[1];
+        }
         return result;
     }
 
@@ -115,6 +117,8 @@ public class StringUtilities {
      * @return an identical string with characters in reverse order.
      */
     public static String reverse(String stringToReverse){
-        return null;
+            StringBuilder str = new StringBuilder(stringToReverse);
+            str.reverse();
+            return str.toString();
     }
 }
